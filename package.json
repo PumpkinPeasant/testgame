@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "testgame",
   "private": true,
   "type": "module",
   "scripts": {
@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "nuxt": "^3.11.2",
+    "pixi.js": "^8.1.0",
     "vue": "^3.4.21",
-    "vue-router": "^4.3.0"
+    "vue-router": "^4.3.0",
+    "vue3-pixi": "^0.9.1"
   }
 }
