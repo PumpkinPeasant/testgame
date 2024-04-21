@@ -2,5 +2,6 @@
 import {fileURLToPath} from "url";
 
 export default defineNuxtConfig({
-  devtools: { enabled: true }
+  devtools: { enabled: true },
+  modules: ["@nuxtjs/tailwindcss"]
 })

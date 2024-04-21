@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <button @click="start">Старт</button>
-    <input v-model="name" type="text" name="name" placeholder="Введите имя">
+  <div class="my-8 mx-10 flex flex-col gap-2">
+    <input class="border border-slate-800 rounded-md self-start p-1" v-model="name" type="text" name="name" placeholder="Введите имя">
+    <button class="bg-slate-800 py-1 px-3 text-slate-200 self-start" @click="start">Старт</button>
     <pre>{{ player }}</pre>
   </div>
 </template>
