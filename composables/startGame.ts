@@ -1,7 +1,7 @@
 import { generateTriangularValue, getRandomNumberInRange } from '~/utils/randomizer';
 import { Stats, Skills, Variables, Player } from '~/interfaces/player';
 
-export const startGame = () : Player => {
+export const startGame = (name:string) : Player => {
     const randomStats: Stats = {
         intelligence: generateTriangularValue(1, 10, 5),
         charisma: generateTriangularValue(1, 10, 5),
@@ -13,6 +13,7 @@ export const startGame = () : Player => {
         gaming: getRandomNumberInRange(0, 4),
         music: getRandomNumberInRange(0, 4),
         trading: getRandomNumberInRange(0, 4),
+        video: getRandomNumberInRange(0, 4),
     };
 
     const startVariables: Variables = {
@@ -26,6 +27,7 @@ export const startGame = () : Player => {
     const randomGender = genders[Math.floor(Math.random() * genders.length)];
 
     return  {
+        name: name,
         gender: randomGender,
         stats: randomStats,
         skills: randomSkills,

@@ -9,6 +9,7 @@ export interface Skills {
     gaming: number;
     music: number;
     trading: number;
+    video: number;
 }
 
 export interface Variables {
@@ -19,6 +20,7 @@ export interface Variables {
 }
 
 export interface Player {
+    name: string;
     gender: string;
     stats: Stats;
     skills: Skills;

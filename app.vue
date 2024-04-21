@@ -1,6 +1,7 @@
 <template>
   <div>
     <button @click="start">Старт</button>
+    <input v-model="name" type="text" name="name" placeholder="Введите имя">
     <pre>{{ player }}</pre>
   </div>
 </template>
@@ -11,8 +12,9 @@ import {startGame} from "~/composables/startGame";
 
 //TODO: Добавить тип
 const player: { value: object | null } = ref(null);
+const name: string = ref('')
 
 const start = () => {
-  player.value = startGame()
+  player.value = startGame(name)
 }
 </script>
