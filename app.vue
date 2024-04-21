@@ -15,7 +15,8 @@
             color="bg-green-600"
             :progress="player.variables.sanity"/>
       </div>
-      <div class="flex mt-5 gap-10 justify-center">
+      <div class="flex mt-5 gap-10">
+        <img :src="player.gender === 'male' ? Male : Female" alt="player" style="height: 200px; width: 200px">
         <div>
           <h3>Об игроке:</h3>
           <p>Имя: <strong>{{player.name}}</strong> </p>
@@ -49,6 +50,8 @@
 <script setup lang="ts">
 import {startGame} from "~/composables/startGame";
 import ProgressBar from "~/components/UI/ProgressBar.vue";
+import Male from "~/assets/images/player/male/male.png"
+import Female from "~/assets/images/player/female/female.png"
 //import {Player} from "~/interfaces/player";
 
 //TODO: Добавить тип
