@@ -11,10 +11,10 @@
   },
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.12.0",
+    "@pixi/spine-pixi": "^1.0.10",
     "nuxt": "^3.11.2",
     "pixi.js": "^8.1.0",
     "vue": "^3.4.21",
-    "vue-router": "^4.3.0",
-    "vue3-pixi": "^0.9.1"
+    "vue-router": "^4.3.0"
   }
 }
